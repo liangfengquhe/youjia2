@@ -1,15 +1,15 @@
-# youjia2
-name:
-油价
-desc：复制本内容到自己的库
-在provname=后面填写所在省份名，如不填写默认江苏油价。provname的值不带"省"字 范例：
-provname=江苏，provname=上海，provname=广东。
-此脚本使用的公开apikey，建议自行申请apikey
-然后自行修改脚本内的apikey
-4 tiles:
-- name: youjia icon: 'car'
-backgroundColor: '#c932a9' argument: 'provname=贵州'
-script-providers:
-youjia:
-url: https://raw.githubusercontent.com/
-deezertidal/Surge_Module/master/files/oil.js
+
+[General]
+loglevel = notify
+
+[Rule]
+# Swiftgram 的分流规则
+DOMAIN-SUFFIX,telegram.org,PROXY
+DOMAIN-SUFFIX,t.me,PROXY
+DOMAIN-KEYWORD,telegram,PROXY
+DOMAIN-SUFFIX,telesco.pe,PROXY
+IP-CIDR,149.154.160.0/20,PROXY
+IP-CIDR,91.108.4.0/22,PROXY
+
+# 其他流量默认规则
+FINAL,DIRECT
